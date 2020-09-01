@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>Blender's professional</title>  
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <style>
+           body {
+				color: black;
+				background: #e4e2e1;
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+				font-size: 90%;	
+                
+                }                               
+
+               
+
+            .win {
+                width: 80%;
+                height: 1000px;
+                margin: 20px auto 20px auto;
+                background-color: white;                
+                border-radius: 10px;                          
+            }           
+
+            .header {
+                text-align: center;
+                 
+            }
+
+            
+
+            .nav {
+                position: relative;
+                margin: 0px;
+                font-size: 17px;				
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;                
+            }                
+           
+            .innav {
+                width: 80%;
+                position:absolute;
+                padding: 38px 0px 10px 257px;
+            }
+
+            .inn {
+                
+                display: inline;
+                padding: 20px;  
+            }
+
+            .pict_nav {
+                
+                padding-top: 90px;
+                margin: 0px;
+            }
+                                 
+            ul {                
+                padding: 10px;
+                text-align: center;               
+            }
+
+            .menu {
+                text-decoration: none;
+                color: black;
+                background-color: #e4e2e1;
+                border-radius: 10px;
+                padding: 10px;                
+            }            
+            .menu:hover{
+                background-color: rgb(134, 133, 133)
+            }     
+
+            .intro {
+                width: 100%;
+                font-size: 40px;  
+                text-align: center;              
+                margin: 0px 0px 80px 0px;
+                line-height: 64px; 
+            }
+
+            .intro2 {
+               width: 68%;  
+               margin: 70px 0px 30px 170px;     
+               color: rgb(87, 85, 85)       
+            }        
+            
+            .in_pict1 {
+                position: absolute;
+                font-size: 50px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(230, 228, 228);                
+                width: 60%;
+                margin: 175px auto 40px 120px;
+                text-align: center;
+            }
+
+            .znachok {
+                position: absolute;                
+                margin: 350px 0px 450px 380px
+            }
+
+            .inn2 {
+                display: inline;
+                padding: 30px
+            }
+
+            .pict_intro {
+                width: 100%
+            }
+
+            .after_intro {
+                width: 70%;  
+               margin: 140px 0px 140px 160px;     
+               color: rgb(87, 85, 85);
+               font-size: 40px;
+               text-align: center; 
+               line-height: 64px;      
+            }
+           
+            .services {
+                padding-top: 80px;
+                padding-bottom: 14px;
+            }
+
+            .inserv {
+                
+                font-size: 40px;
+                color: rgb(87, 85, 85);
+                padding: 40px 0px 0px 320px 
+            }
+            
+            .inserv2 {
+                
+                padding: 40px 0px 0px 150px;
+                font-size: 34px;
+            }
+
+            .Ilya {
+                background-color: rgb(248, 221, 179)
+            }
+            
+            .about_Ilya {
+                position: absolute;
+                font-size: 34px;
+                padding: 17px 0px 0px 230px;
+                text-align: center;
+                width: 54%;
+                color: rgb(87, 85, 85);
+            }
+
+            .price {
+                background-color: rgb(160, 207, 252);
+                color: rgb(87, 85, 85);
+                font-size: 40px;
+                margin-top: 140px;
+            }
+
+            .inprice {                
+                font-size: 45px;
+                color: rgb(87, 85, 85);
+                padding: 40px 0px 0px 480px;
+            }
+
+            .coin {
+                padding: 40px 0px 0px 475px
+            }
+
+            .incoin {
+                margin: 24px 0px 0px 380px;               
+            }
+            .incoin2 {
+                margin: 10px 0px 0px 80px;
+            }
+            .incoins {
+                padding: 0px 0px 40px 0px;
+            }
+            /* Кнопка выпадающего списка */
+            .dropbtn {
+            background-color: #e4e2e1;
+            color: black;
+            padding: 10px;
+            font-size: 17px;
+            border-radius:10px;
+            cursor: pointer;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: none;
+            
+            }
+
+            /* Кнопка выпадающего меню при наведении и фокусировке */
+            .dropbtn:hover, .dropbtn:focus {
+            background-color: rgb(134, 133, 133);
+            
+            }
+
+            /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            
+            }
+
+            /* Выпадающее содержимое (скрыто по умолчанию) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            
+            min-width: 160px;
+            
+            z-index: 1;
+            }
+
+            /* Ссылки внутри выпадающего списка */
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            
+            }
+
+            /* Изменение цвета выпадающих ссылок при наведении курсора */
+            .dropdown-content a:hover {background-color: #ddd}
+            
+
+            /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+            .show {display:block;}
+
+            .VK {
+                position: absolute;
+                padding: 0px 0px 0px 1000px
+            }
+            .inVK {
+                position: absolute;
+                background-color: n
+            }
+
+            .flex-container {
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="row">
+        <div class="win">              
+            <img src="Images/Сайт Ильи.png" alt="" width = 605px class="logo">
+        <div class="flex-container">
+            <div class="nav">
+            <div class="innav">
+                <ul>
+                    <li class="inn">
+                        <div class="dropdown">
+                            <div onclick="myFunction()" class="dropbtn">Главная</div>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#" class="menu">Введение</a>
+                                    <a href="#" class="menu">Цены</a>                                          
+                                </div>
+                        </div>
+                    </li>
+                            <script>
+                                /* Когда пользователь нажимает на кнопку,
+                                переключение между скрытием и отображением раскрывающегося содержимого */
+                                function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                                }
+
+                                // Закройте выпадающее меню, если пользователь щелкает за его пределами
+                                window.onclick = function(event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                    var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                    }
+                                }
+                                }
+                            </script>
+                        <li class="inn"><a href="" class="menu">Портфолио</a></li>
+                        <li class="inn"><a href="" class="menu">Контакты</a></li>
+                        <li class="inn"><a href="" class="menu">О себе</a></li>
+                    </ul>
+                </div>
+                <div class="pict_nav">
+                    <img src="Images/line1.png" width="100%">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class = "intro2">В наше время стремительными темпами развивается 3D моделирование. И для того, чтобы создавать 3D модели создаются различные программы.</div>
+            <div class="pict_intro">
+                <ul>
+                    <li class="inn2"><img src="Images/Autodesk-3ds-Max-Logo.png" width="140px"></li>
+                    <li class="inn2"><img src="Images/292.750x0.png" width="140px"></li>
+                    <li class="inn2"><img src="Images/cinema 4D2.png" width="150px"></li>
+                    <li class="inn2"><img src="Images/help-you-with-a-blender-3d-problem.png" width="180px"></li>
+                </ul>                                                
+            </div>
+        </div>
+            
+            <div class="pict1">
+                <div class="in_pict1">Я работаю в программе "<i style = "color: orange">Blender</i>". И мне она очень нравится.
+                </div>
+                <div class="znachok">
+                    <img src="Images/unnamed.png" width="220px">
+                </div>
+                <div>
+                    <img src="Images/Без имени-1.png" width="100%">
+                </div>
+            </div> 
+            
+            <div class="after_intro">
+                "<i style = "color: orange">Blender</i>" - это одна из самых популярных и быстроразвивающихся программ, которая включает в себя множество различных средств работы с <b>трёхмерной графикой</b>.
+            </div>  
+
+            <div class="Ilya">
+                <p class="about_Ilya"><i>"Я - <b>Лебедев Илья Владимирович</b>. Несмотря на мой юный возраст, я занимаюсь 3D моделированием около 4-ёх лет и это мне очень нравится. Вы можете посмотреть мои творения в портфолио. Я рад, что хобби - это ещё и моя работа! (Именно потому, что мне это нравится у меня такие маленькие цены)."</i></p>
+                <div class="photo">
+                    <img src="Images/Ilya.png" width="240px">
+                </div>
+            </div>
+
+            <div class="services">
+                <p class="inserv">Моя формула работы:</p>
+                <div class="inserv2">
+                   <img src = "Images/formula.png" width="770px">
+                </div>               
+            </div> 
+            
+            <div class="price">
+                <p class="inprice"><b>Цены:</b></p>
+                <div class="coin">
+                    <img src="Images/монетка-нарисованная-рукой-93090870.png" width="140px">
+                </div>
+                <div class="incoins">
+                    <p class="incoin"><b>От 200 до 700 руб </b></p>
+                    <div class="incoin2"><b>(т.е. от лёгкой до самой сложной 3D модели)</b></div>
+                </div>    
+            </div>
+
+            <div class="VK">
+                <a href="" class="inVK"><img src="Images/5b83edfb7721f1657b599e60.png" width="70px"></a>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
